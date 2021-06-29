@@ -5,6 +5,7 @@ import { Chart1 } from "../components/charts1";
 import { Chart2 } from "../components/charts2";
 import { Chart3 } from "../components/charts3";
 import { Chart4 } from "../components/charts4";
+import { Chart5 } from "../components/charts5";
 
 export const Home = () => {
   const year = new Date().getFullYear();
@@ -22,7 +23,9 @@ export const Home = () => {
         </section>
         <section className="border section3">3</section>
         <section className="border section4">4</section>
-        <section className="border section5">5</section>
+        <section className="border section5">
+          <Chart5 />
+        </section>
       </main>
       <footer>&copy; 饥人谷 2020-{year}</footer>
     </div>
