@@ -1,7 +1,37 @@
 @import '../shared/helper';
-header {
-    // width: px(367);
-    height: px(99);
-    // border: 1px solid red;
-    background-size: cover;
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    header {
+        height: px(99);
+        background-size: cover;
+    }
+    main {
+        display: grid;
+        flex: 1;
+        grid-template: "box1 box2 box3 box4" 755fr "box5 box5 box3 box4" 363fr / 366fr 361fr 811fr 747fr;
+        grid-column-gap: px(28);
+        grid-row-gap: px(28);
+        .section1 {
+            grid-area: box1;
+            background: lemonchiffon;
+        }
+        .section2 {
+            grid-area: box2;
+            background: lightpink;
+        }
+        .section3 {
+            grid-area: box3;
+            background: lightsalmon;
+        }
+        .section4 {
+            grid-area: box4;
+            background: limegreen;
+        }
+        .section5 {
+            grid-area: box5;
+            background: lightcyan;
+        }
+    }
 }

@@ -32,5 +32,13 @@ body {
 
 #root {
     margin: 0 auto;
-    background: lightpink;
+    // background: lightpink;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
