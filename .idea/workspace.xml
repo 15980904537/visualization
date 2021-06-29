@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2833fe6-4f8b-4499-99ea-86f211f6aade" name="Default Changelist" comment="" />
+    <list default="true" id="b2833fe6-4f8b-4499-99ea-86f211f6aade" name="Default Changelist" comment="初始化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +35,16 @@
       <updated>1624934209173</updated>
       <workItem from="1624934210477" duration="443000" />
       <workItem from="1624936676438" duration="529000" />
+      <workItem from="1624940309142" duration="395000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <created>1624940399126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624940399126</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -52,5 +61,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
   </component>
 </project>
