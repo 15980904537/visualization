@@ -5,20 +5,36 @@ import { px } from "../shared/px";
 
 export const Chart2: React.FunctionComponent = () => {
   const divRef = useRef(null);
+  const myChart = useRef(null);
+  const data = [
+    { name: "城关区公安局", 2011: 2, 2012: Math.random() * 10 },
+    { name: "七里河区公安局", 2011: 2, 2012: 3 },
+    { name: "西固区公安局", 2011: 2, 2012: 3 },
+    { name: "安宁区公安局", 2011: 2, 2012: 3 },
+    { name: "红古区公安局", 2011: 2, 2012: 3 },
+    { name: "永登县公安局", 2011: 2, 2012: 3 },
+    { name: "皋兰县公安局", 2011: 2, 2012: 3 },
+    { name: "榆中县公安局", 2011: 2, 2012: 3 },
+    { name: "新区公安局", 2011: 2, 2012: 3 },
+  ];
   useEffect(() => {
-    var echart = echarts.init(divRef.current);
-    const newData = [
-      { name: "城关区公安局", 2011: 2, 2012: Math.random() * 10 },
-      { name: "七里河区公安局", 2011: 2, 2012: 3 },
-      { name: "西固区公安局", 2011: 2, 2012: 3 },
-      { name: "安宁区公安局", 2011: 2, 2012: 3 },
-      { name: "红古区公安局", 2011: 2, 2012: 3 },
-      { name: "永登县公安局", 2011: 2, 2012: 3 },
-      { name: "皋兰县公安局", 2011: 2, 2012: 3 },
-      { name: "榆中县公安局", 2011: 2, 2012: 3 },
-      { name: "新区公安局", 2011: 2, 2012: 3 },
-    ];
-    echart.setOption(
+    setInterval(() => {
+      const newData = [
+        { name: "城关区公安局", 2011: 2, 2012: Math.random() * 10 },
+        { name: "七里河区公安局", 2011: 2, 2012: 3 },
+        { name: "西固区公安局", 2011: 2, 2012: 3 },
+        { name: "安宁区公安局", 2011: 2, 2012: 3 },
+        { name: "红古区公安局", 2011: 2, 2012: 3 },
+        { name: "永登县公安局", 2011: 2, 2012: 3 },
+        { name: "皋兰县公安局", 2011: 2, 2012: 3 },
+        { name: "榆中县公安局", 2011: 2, 2012: 3 },
+        { name: "新区公安局", 2011: 2, 2012: 3 },
+      ];
+      x(newData);
+    }, 1000);
+  }, []);
+  const x = (newData) => {
+    myChart.current.setOption(
       createEchartsOptions({
         grid: {
           top: px(20),
@@ -50,15 +66,47 @@ export const Chart2: React.FunctionComponent = () => {
             name: "破案排名1",
             type: "bar",
             data: newData.map((i) => i[2011]),
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                  {
+                    offset: 0,
+                    color: "#2034F9",
+                  },
+                  {
+                    offset: 1,
+                    color: "#04A1FF",
+                  },
+                ]),
+              },
+            },
           },
           {
             name: "破案排名2",
             type: "bar",
             data: newData.map((i) => i[2012]),
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                  {
+                    offset: 0,
+                    color: "#B92AE8",
+                  },
+                  {
+                    offset: 1,
+                    color: "#6773E7",
+                  },
+                ]),
+              },
+            },
           },
         ],
       })
     );
+  };
+  useEffect(() => {
+    myChart.current = echarts.init(divRef.current);
+    x(data);
   }, []);
 
   return (

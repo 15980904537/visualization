@@ -40,6 +40,7 @@
       <workItem from="1624940309142" duration="395000" />
       <workItem from="1624942877073" duration="229000" />
       <workItem from="1624944780581" duration="375000" />
+      <workItem from="1624976322711" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1624940399126</created>
@@ -69,7 +70,28 @@
       <option name="project" value="LOCAL" />
       <updated>1624945958128</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="重构options项">
+      <created>1624976359579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624976359579</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rem适配出的一点问题">
+      <created>1624976380528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624976380528</updated>
+    </task>
+    <task id="LOCAL-00007" summary="配置第二个柱形图">
+      <created>1624977762673</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624977762673</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +114,9 @@
     <MESSAGE value="创建header头部（注意png在ts中的导入）" />
     <MESSAGE value="构建页面的整体布局（使用flex，grid）" />
     <MESSAGE value="用box-shadow创建边框" />
-    <option name="LAST_COMMIT_MESSAGE" value="用box-shadow创建边框" />
+    <MESSAGE value="重构options项" />
+    <MESSAGE value="rem适配出的一点问题" />
+    <MESSAGE value="配置第二个柱形图" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置第二个柱形图" />
   </component>
 </project>
