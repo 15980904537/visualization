@@ -3,19 +3,35 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: #010310;
-    header {
+    color: white;
+    font-size: px(16);
+    >header {
+        margin: 0 auto;
         height: px(99);
         background-size: cover;
+        width: px(2420);
     }
-    main {
+    >footer {
+        height: px(68);
+        border: 1px solid #0d2d59;
+        margin: px(20) 0 1px;
+        border-radius: 4px;
+        background: #0c0d2b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    >main {
         display: grid;
         flex: 1;
         grid-template: "box1 box2 box3 box4" 755fr "box5 box5 box3 box4" 363fr / 366fr 361fr 811fr 747fr;
         grid-column-gap: px(28);
         grid-row-gap: px(28);
+        padding-top: px(30);
         section {
             text-align: center;
+        }
+        .border {
             border: 1px solid #0764bc;
             border-radius: 4px;
             box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
@@ -31,8 +47,33 @@
                 box-shadow: 17px 0 0 -16px #0e325f, -17px 0 0 -16px #0e325f, 0 17px 0 -16px #0e325f, 0 -17px 0 -16px #0e325f, 9px 0 0 -8px #0d4483, -9px 0 0 -8px #0d4483, 0 9px 0 -8px #0d4483, 0 -9px 0 -8px #0d4483;
             }
         }
+        .管辖统计,
+        .破获排名 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: px(315);
+            h1 {
+                border: 1px solid #0a5299;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                font-size: px(22);
+                padding: px(10) px(28);
+                text-shadow: 0 0 px(3) white;
+            }
+            .chart1 {
+                flex: 1;
+                width: 100%;
+            }
+        }
+        .破获排名 {
+            height: px(423);
+        }
         .section1 {
             grid-area: box1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .section2 {
             grid-area: box2;
