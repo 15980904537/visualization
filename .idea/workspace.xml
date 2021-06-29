@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2833fe6-4f8b-4499-99ea-86f211f6aade" name="Default Changelist" comment="初始化">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2833fe6-4f8b-4499-99ea-86f211f6aade" name="Default Changelist" comment="初始化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +39,7 @@
       <workItem from="1624942877073" duration="229000" />
       <workItem from="1624944780581" duration="375000" />
       <workItem from="1624976322711" duration="697000" />
+      <workItem from="1624978511878" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1624940399126</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624977762673</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="让柱形图的颜色渐变/设置动画">
+      <created>1624978554438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624978554438</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +123,7 @@
     <MESSAGE value="重构options项" />
     <MESSAGE value="rem适配出的一点问题" />
     <MESSAGE value="配置第二个柱形图" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置第二个柱形图" />
+    <MESSAGE value="让柱形图的颜色渐变/设置动画" />
+    <option name="LAST_COMMIT_MESSAGE" value="让柱形图的颜色渐变/设置动画" />
   </component>
 </project>

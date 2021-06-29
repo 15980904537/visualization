@@ -3,6 +3,8 @@ import "./home.scss";
 import imgageHeader from "../images/header.png";
 import { Chart1 } from "../components/charts1";
 import { Chart2 } from "../components/charts2";
+import { Chart3 } from "../components/charts3";
+import { Chart4 } from "../components/charts4";
 
 export const Home = () => {
   const year = new Date().getFullYear();
@@ -14,7 +16,10 @@ export const Home = () => {
           <Chart1 />
           <Chart2 />
         </section>
-        <section className="border section2">2</section>
+        <section className="section2">
+          <Chart3 />
+          <Chart4 />
+        </section>
         <section className="border section3">3</section>
         <section className="border section4">4</section>
         <section className="border section5">5</section>
