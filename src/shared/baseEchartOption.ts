@@ -1,7 +1,7 @@
 import { px } from "./px";
 export const baseEchartOptions = {
   textStyle: {
-    fontSize: px(24),
+    fontSize: px(12),
   },
   axisTick: { show: false },
   axisLine: {
@@ -9,7 +9,7 @@ export const baseEchartOptions = {
   },
   grid: {
     top: px(20),
-    right: px(10),
+    right: px(20),
     left: px(50),
     bottom: px(50),
   },

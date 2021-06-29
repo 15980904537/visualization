@@ -68,6 +68,27 @@
         }
         .破获排名 {
             height: px(423);
+            .legend {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                padding: 0 px(20) px(10);
+                >.first,
+                >.second {
+                    display: inline-block;
+                    width: px(18);
+                    height: px(12);
+                    background: red;
+                    margin: 0 px(10);
+                }
+                .first {
+                    background: linear-gradient(90deg, #2034f9 0%, #04a1ff 100%);
+                }
+                .second {
+                    background: linear-gradient(90deg, #b92ae8 0%, #6773e7 100%);
+                }
+            }
         }
         .section1 {
             grid-area: box1;

@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import * as echarts from "echarts";
-import { px } from "../shared/px";
-import { baseEchartOptions } from "../shared/baseEchartOption";
 import { createEchartsOptions } from "../shared/createEchartsOption";
 export const Chart1: React.FunctionComponent = () => {
   const divRef = useRef(null);
@@ -24,7 +22,6 @@ export const Chart1: React.FunctionComponent = () => {
             "七里河区",
           ],
           axisLabel: {
-            fontSize: px(12),
             formatter(value) {
               if (value.length > 2) {
                 let array = value.split("");
@@ -41,9 +38,6 @@ export const Chart1: React.FunctionComponent = () => {
           splitLine: { show: false },
           axisLine: {
             show: true,
-          },
-          axisLabel: {
-            fontSize: px(12),
           },
         },
         series: [
